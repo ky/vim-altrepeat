@@ -1,7 +1,7 @@
 "-----------------------------------------------------------------------------
 " altrepeat
 " Author: ky
-" Version: 0.1
+" Version: 0.1.1
 " License: The MIT License
 " The MIT License {{{
 "
@@ -27,11 +27,7 @@
 " }}}
 "-----------------------------------------------------------------------------
 
-if &compatible || v:version < 700
-  finish
-endif
-
-if (exists('g:loaded_altrepeat') && g:loaded_altrepeat)
+if &compatible || v:version < 700 || exists('g:loaded_altrepeat')
   finish
 endif
 
